@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book Your Safari | Milana Tours</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1b1c1c",
+                        "surface-bright": "#fbf9f8",
+                        "safari-green": "#2E6B3F",
+                        "on-primary-fixed": "#00210b",
+                        "primary-fixed": "#b0f2ba",
+                        "primary-container": "#2e6b3f",
+                        "tertiary-fixed-dim": "#cac6bd",
+                        "primary-fixed-dim": "#95d5a0",
+                        "secondary-fixed-dim": "#f6be39",
+                        "on-surface": "#1b1c1c",
+                        "desert-sand": "#F5F0E6",
+                        "on-tertiary-fixed": "#1d1c16",
+                        "on-primary-fixed-variant": "#115228",
+                        "on-secondary-container": "#715300",
+                        "surface-variant": "#e4e2e1",
+                        "surface-tint": "#2d6a3e",
+                        "error-container": "#ffdad6",
+                        "background": "#fbf9f8",
+                        "secondary-fixed": "#ffdfa0",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#a8e9b2",
+                        "on-tertiary-container": "#ded9cf",
+                        "on-tertiary-fixed-variant": "#494740",
+                        "surface-container": "#f0eded",
+                        "tertiary-container": "#615f57",
+                        "whatsapp-green": "#25D366",
+                        "primary": "#125229",
+                        "secondary": "#795900",
+                        "surface-container-high": "#eae8e7",
+                        "outline": "#717970",
+                        "tertiary-fixed": "#e7e2d8",
+                        "on-surface-variant": "#404940",
+                        "inverse-on-surface": "#f3f0f0",
+                        "inverse-surface": "#303030",
+                        "on-secondary-fixed": "#261a00",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c0c9be",
+                        "charcoal": "#333333",
+                        "savanna-gold": "#D4A017",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e4e2e1",
+                        "surface": "#fbf9f8",
+                        "surface-container-low": "#f6f3f2",
+                        "tertiary": "#494740",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#ffc641",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#95d5a0",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "surface-dim": "#dcd9d9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "60px",
+                        "container-max": "1280px",
+                        "base": "8px",
+                        "section-gap": "120px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "price-display": ["EB Garamond"],
+                        "headline-lg": ["EB Garamond"],
+                        "title-lg": ["Montserrat"],
+                        "headline-md": ["EB Garamond"],
+                        "body-md": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "label-md": ["Montserrat"],
+                        "display-lg": ["EB Garamond"]
+                    },
+                    "fontSize": {
+                        "price-display": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "500"}],
+                        "title-lg": ["20px", {"lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-header {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px) saturate(150%);
+            -webkit-backdrop-filter: blur(20px) saturate(150%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .sun-drenched-shadow {
+            box-shadow: 0 20px 40px -15px rgba(46, 107, 63, 0.08);
+        }
+        .step-inactive { opacity: 0.5; filter: grayscale(1); }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        input:focus {
+            outline: none;
+            border-color: #2E6B3F !important;
+            box-shadow: 0 0 0 2px rgba(46, 107, 63, 0.1);
+        }
+        .transition-all-custom { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+    </style>
+</head>
+<body class="bg-surface-bright font-body-md text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar (JSON Managed Style) -->
+<header class="bg-white/60 dark:bg-charcoal/60 backdrop-blur-md border-b border-white/10 shadow-md backdrop-saturate-150 docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-safari-green dark:text-primary-fixed-dim">
+                Milana Tours
+            </div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-safari-green transition-colors font-title-lg text-title-lg" href="#">Destinations</a>
+<a class="text-safari-green border-b-2 border-savanna-gold pb-1 font-bold font-title-lg text-title-lg" href="#">Tours</a>
+<a class="text-on-surface-variant hover:text-safari-green transition-colors font-title-lg text-title-lg" href="#">Packages</a>
+<a class="text-on-surface-variant hover:text-safari-green transition-colors font-title-lg text-title-lg" href="#">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="relative group">
+<button class="flex items-center gap-1 font-title-lg text-title-lg text-safari-green">
+<span id="current-currency">USD</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+<!-- Currency Switcher Dropdown -->
+<div class="absolute right-0 top-full mt-2 w-32 bg-white rounded-xl shadow-xl border border-surface-variant opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 overflow-hidden">
+<button class="w-full text-left px-4 py-2 hover:bg-desert-sand transition-colors" onclick="updateCurrency('USD', 1)">USD</button>
+<button class="w-full text-left px-4 py-2 hover:bg-desert-sand transition-colors" onclick="updateCurrency('KES', 130)">KES</button>
+<button class="w-full text-left px-4 py-2 hover:bg-desert-sand transition-colors" onclick="updateCurrency('UGX', 3700)">UGX</button>
+<button class="w-full text-left px-4 py-2 hover:bg-desert-sand transition-colors" onclick="updateCurrency('TZS', 2500)">TZS</button>
+</div>
+</div>
+<a class="bg-whatsapp-green text-white px-6 py-2 rounded-full font-bold flex items-center gap-2 hover:scale-105 transition-transform" href="https://wa.me/2540100009185">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span>WhatsApp</span>
+</a>
+</div>
+</div>
+</header>
+<main class="flex-grow max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop py-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Booking Steps Column -->
+<div class="lg:col-span-8 space-y-12">
+<!-- Page Title -->
+<div class="space-y-2">
+<h1 class="font-headline-lg text-headline-lg text-safari-green">Complete Your Adventure</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Follow the steps below to secure your spot in the heart of the wild.</p>
+</div>
+<!-- Horizontal Stepper -->
+<div class="flex items-center justify-between relative mb-12">
+<div class="absolute top-1/2 left-0 w-full h-0.5 bg-surface-variant -translate-y-1/2 z-0"></div>
+<div class="absolute top-1/2 left-0 w-1/4 h-0.5 bg-savanna-gold -translate-y-1/2 z-0 transition-all duration-500" id="progress-line"></div>
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-safari-green text-white flex items-center justify-center font-bold shadow-lg" id="step-node-1">1</div>
+<span class="font-label-md text-label-md uppercase text-safari-green">Info</span>
+</div>
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-white border-2 border-surface-variant text-on-surface-variant flex items-center justify-center font-bold" id="step-node-2">2</div>
+<span class="font-label-md text-label-md uppercase text-on-surface-variant">Review</span>
+</div>
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-white border-2 border-surface-variant text-on-surface-variant flex items-center justify-center font-bold" id="step-node-3">3</div>
+<span class="font-label-md text-label-md uppercase text-on-surface-variant">Extras</span>
+</div>
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-white border-2 border-surface-variant text-on-surface-variant flex items-center justify-center font-bold" id="step-node-4">4</div>
+<span class="font-label-md text-label-md uppercase text-on-surface-variant">Payment</span>
+</div>
+</div>
+<!-- Form Containers -->
+<div id="booking-form-steps">
+<!-- Step 1: Traveler Info -->
+<section class="transition-all-custom" id="step-1">
+<div class="bg-white rounded-2xl p-8 sun-drenched-shadow border border-surface-variant/30 space-y-8">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-3">
+<span class="material-symbols-outlined text-savanna-gold">person</span>
+                                Traveler Information
+                            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant">Full Name</label>
+<input class="w-full bg-desert-sand/30 border border-surface-variant rounded-lg p-4 font-body-md" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant">Email Address</label>
+<input class="w-full bg-desert-sand/30 border border-surface-variant rounded-lg p-4 font-body-md" placeholder="john@example.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant">Phone Number</label>
+<input class="w-full bg-desert-sand/30 border border-surface-variant rounded-lg p-4 font-body-md" placeholder="+1 234 567 890" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant">Nationality</label>
+<select class="w-full bg-desert-sand/30 border border-surface-variant rounded-lg p-4 font-body-md appearance-none">
+<option>United States</option>
+<option>United Kingdom</option>
+<option>Germany</option>
+<option>Kenya</option>
+</select>
+</div>
+</div>
+<button class="w-full md:w-auto bg-safari-green text-white px-12 py-4 rounded-lg font-bold hover:bg-primary-container transition-colors ml-auto flex items-center justify-center gap-2" onclick="goToStep(2)">
+                                Next Step
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Step 2: Tour Selection Review -->
+<section class="hidden transition-all-custom" id="step-2">
+<div class="bg-white rounded-2xl p-8 sun-drenched-shadow border border-surface-variant/30 space-y-8">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-3">
+<span class="material-symbols-outlined text-savanna-gold">visibility</span>
+                                Review Your Tour
+                            </h2>
+<div class="flex flex-col md:flex-row gap-6 bg-desert-sand/20 rounded-xl p-4 border border-desert-sand">
+<div class="w-full md:w-48 h-32 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A cinematic, high-resolution photograph of a luxury safari jeep moving across the golden Maasai Mara savanna at dawn. The morning light is soft and warm, casting long shadows of acacia trees across the tall grass. The atmosphere is serene and prestigious, emphasizing a premium travel experience with deep greens and golden hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8oMDwkI-zNarntJh9q1JvcjkayzIJ56gkqyd6hjqACjPt9Jp0RiImeoPA51ozsrEg7UOcGVS0HWuTozz9u27QKO6VmLfMTSX61uUSY6DczrNlBHG0l3Z1QiNQEMw_tptEeAKn4mHFJVyT2YApW_GuBcMBdpYHvhJ3U0JnjWbvaIJ3dMFRoTA_JwTIlB3BJXd3tmarVzumgOKcn74pcw-JsXv4IGVQs88HUprGWq9Mvjn8LS2V8xyx9egB0OSBMXB6enQiRAEcFqg"/>
+</div>
+<div class="space-y-2">
+<h3 class="font-title-lg text-title-lg text-safari-green">7-Day Great Migration Special</h3>
+<p class="text-on-surface-variant">Maasai Mara &amp; Amboseli National Park</p>
+<div class="flex gap-4 text-label-md font-label-md uppercase text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">calendar_today</span> Oct 12 - Oct 19</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">group</span> 2 Travelers</span>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-center gap-4 pt-4">
+<button class="text-on-surface-variant hover:text-safari-green font-bold flex items-center gap-2" onclick="goToStep(1)">
+<span class="material-symbols-outlined">arrow_back</span>
+                                    Back
+                                </button>
+<button class="bg-safari-green text-white px-12 py-4 rounded-lg font-bold hover:bg-primary-container transition-colors flex items-center gap-2" onclick="goToStep(3)">
+                                    Confirm &amp; Add Extras
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Step 3: Extras -->
+<section class="hidden transition-all-custom" id="step-3">
+<div class="bg-white rounded-2xl p-8 sun-drenched-shadow border border-surface-variant/30 space-y-8">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-3">
+<span class="material-symbols-outlined text-savanna-gold">add_task</span>
+                                Personalize Your Journey
+                            </h2>
+<div class="space-y-4">
+<!-- Extra Item -->
+<label class="flex items-center justify-between p-6 border border-surface-variant rounded-xl cursor-pointer hover:border-safari-green transition-all group">
+<div class="flex items-center gap-4">
+<input class="w-6 h-6 text-safari-green rounded border-surface-variant focus:ring-safari-green" onchange="toggleExtra('balloon', 450, this)" type="checkbox"/>
+<div>
+<p class="font-title-lg text-title-lg text-on-surface">Hot Air Balloon Safari</p>
+<p class="text-on-surface-variant text-body-md">Sunrise flight over the Mara with champagne breakfast.</p>
+</div>
+</div>
+<span class="font-price-display text-price-display text-safari-green" data-base-price="450">$450</span>
+</label>
+<!-- Extra Item -->
+<label class="flex items-center justify-between p-6 border border-surface-variant rounded-xl cursor-pointer hover:border-safari-green transition-all group">
+<div class="flex items-center gap-4">
+<input class="w-6 h-6 text-safari-green rounded border-surface-variant focus:ring-safari-green" onchange="toggleExtra('transfer', 50, this)" type="checkbox"/>
+<div>
+<p class="font-title-lg text-title-lg text-on-surface">VIP Airport Transfer</p>
+<p class="text-on-surface-variant text-body-md">Private luxury SUV from JKIA to your hotel.</p>
+</div>
+</div>
+<span class="font-price-display text-price-display text-safari-green" data-base-price="50">$50</span>
+</label>
+<!-- Extra Item -->
+<label class="flex items-center justify-between p-6 border border-surface-variant rounded-xl cursor-pointer hover:border-safari-green transition-all group">
+<div class="flex items-center gap-4">
+<input class="w-6 h-6 text-safari-green rounded border-surface-variant focus:ring-safari-green" onchange="toggleExtra('insurance', 120, this)" type="checkbox"/>
+<div>
+<p class="font-title-lg text-title-lg text-on-surface">Premium Travel Insurance</p>
+<p class="text-on-surface-variant text-body-md">Full medical and trip cancellation coverage.</p>
+</div>
+</div>
+<span class="font-price-display text-price-display text-safari-green" data-base-price="120">$120</span>
+</label>
+</div>
+<div class="flex justify-between items-center gap-4 pt-4">
+<button class="text-on-surface-variant hover:text-safari-green font-bold flex items-center gap-2" onclick="goToStep(2)">
+<span class="material-symbols-outlined">arrow_back</span>
+                                    Back
+                                </button>
+<button class="bg-safari-green text-white px-12 py-4 rounded-lg font-bold hover:bg-primary-container transition-colors flex items-center gap-2" onclick="goToStep(4)">
+                                    Final Summary
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Step 4: Payment Summary -->
+<section class="hidden transition-all-custom" id="step-4">
+<div class="bg-white rounded-2xl p-8 sun-drenched-shadow border border-surface-variant/30 space-y-8">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-3">
+<span class="material-symbols-outlined text-savanna-gold">payments</span>
+                                Secure Your Booking
+                            </h2>
+<div class="p-6 bg-surface-container-low rounded-xl border-l-4 border-savanna-gold">
+<p class="text-body-md text-on-surface-variant italic">"We prioritize secure, personal communication for high-end safari arrangements. Your final confirmation and payment link will be sent directly via WhatsApp."</p>
+</div>
+<div class="space-y-6">
+<p class="font-label-md text-label-md uppercase text-on-surface-variant">We Accept</p>
+<div class="flex flex-wrap gap-8 items-center opacity-70">
+<div class="h-8 w-16 bg-contain bg-no-repeat bg-center" data-alt="Visa logo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIipB3O2PZMfSgKilbLUjS9SOzE8RCxVFObcXiyaxa_3cnuUnGwjpUh8P4YcEGw7uTyG2QTdW6ic2SlB45jgDku8RyvNJEOyvFtoLcYAk09qaaOK6ee9FP-1zoCIFhdJQ6wPrgWUfWO3XJ0HiUXFbhDwNb9tG6K2dX2wERHJfgMa7RHhn_eZ-gtSmaHGGrzrv_CkfO87i6pZDKO4ORHr-T3qsq-ck2E3vd4g-GoMfXQPVsXtAvH8wTfBgPBklbYbBHgdmf1oUi9RM')"></div>
+<div class="h-8 w-16 bg-contain bg-no-repeat bg-center" data-alt="Mastercard logo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqjmmBVqdLU_W-HSwAhexoMWm0NO3z_x14_7WCH5ZgEjDaQ0VRGdLp4YSd5MiwaLNXMkiQQlt4ojSl4xqyrcoBDgzdr6TsJ-mp2zzalWAj2AmM_lVSotMRjLasw1ygQbgTMfhXbXfpASBn09IOk_EsjW37MVksK4mf5t-xCu42t8ENRyx543AD1diN26YB5JHZkdyxYYYumm5RJ8HwMMlqcV8g1pRRyoCbeZkay1TLtqt7jwWiVVN5sBbkB-fY1WYo6ur-w2PrSck')"></div>
+<div class="h-10 w-20 bg-contain bg-no-repeat bg-center" data-alt="M-Pesa logo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4JKSkuyXL7de9lSkcscZGWpR5KYKhFdalKClVsl6YVJQlBVX6rkXcaJ1DVCqRpwYleHwVIMzr9sIf8vkr76MxGALsNoWlU3rHxir8TMhaUVImjIK3H4qWSlW0pbnL3TXTU8p9d6nm97m6OtrTNWbC9x-I4Lk7dOLMc8eQYQtISPZoKB9BT7qdsSKL46Pyoayhh4PjQA7vxyj2aQPbFpG1VC-ICBI1ua0S3lvWUTFIhoHkGfV2rxXfYTE3l1PezaDfjOZyIrgvfj4')"></div>
+<div class="h-8 w-16 bg-contain bg-no-repeat bg-center" data-alt="PayPal logo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAupNRbKSrJhh80kbey_eWMx6FSMSry4UGnnfDGDtBFlf6iGuKey2ldzsur9z8TryPFF9bI1vpC8DH-n90yTBt-BkruZ7DyAc6YTk-ESRG7-C8EG4vuIcJdVXLsKKuxapXYUlkBUfZtKrVYFMr7K5UauFuVKY_yNpqBL0F7ZzQaGL-WEuwzPlI9hjG0Qngr3WPfILrevd-dP03uefJYBGB3awtK_Z5Ma5OnQxgYFj29Ad9o3kRYDl8OkSMSc3XAQYh7g21X2uMKK68')"></div>
+</div>
+</div>
+<div class="flex justify-between items-center gap-4 pt-4 border-t border-surface-variant">
+<button class="text-on-surface-variant hover:text-safari-green font-bold flex items-center gap-2" onclick="goToStep(3)">
+<span class="material-symbols-outlined">arrow_back</span>
+                                    Back
+                                </button>
+<a class="bg-whatsapp-green text-white px-12 py-4 rounded-lg font-bold hover:scale-105 transition-transform flex items-center gap-3 text-center" href="https://wa.me/2540100009185?text=Hello%20Milana%20Tours,%20I'd%20like%20to%20confirm%20my%20safari%20booking.">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                                    Confirm Booking via WhatsApp
+                                </a>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Sidebar Summary -->
+<aside class="lg:col-span-4 sticky top-28">
+<div class="bg-safari-green text-white rounded-2xl p-8 sun-drenched-shadow space-y-6">
+<h3 class="font-title-lg text-title-lg border-b border-white/20 pb-4">Booking Summary</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center">
+<span class="opacity-80">7-Day Great Migration</span>
+<span class="font-bold" data-val="3200" id="base-price-display">$3,200</span>
+</div>
+<div class="space-y-2 text-sm opacity-80 border-t border-white/10 pt-4 hidden" id="extras-list">
+<!-- Injected extras -->
+</div>
+<div class="flex justify-between items-center text-on-primary-container bg-white/10 p-4 rounded-lg mt-6">
+<span class="font-bold">Total Payable</span>
+<span class="font-headline-md text-headline-md" id="total-price-display">$3,200</span>
+</div>
+</div>
+<div class="space-y-4 pt-6">
+<div class="flex items-center gap-3 text-sm opacity-90">
+<span class="material-symbols-outlined text-savanna-gold">shield_lock</span>
+<span>Secure Data Encryption</span>
+</div>
+<div class="flex items-center gap-3 text-sm opacity-90">
+<span class="material-symbols-outlined text-savanna-gold">headset_mic</span>
+<span>24/7 Safari Support</span>
+</div>
+</div>
+</div>
+<!-- Assistance Card -->
+<div class="mt-6 bg-white rounded-2xl p-6 border border-surface-variant/30 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-desert-sand flex items-center justify-center">
+<span class="material-symbols-outlined text-safari-green">support_agent</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Need help?</p>
+<p class="text-sm text-on-surface-variant">Speak with an expert: +254 010 000 9185</p>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer (JSON Managed Style) -->
+<footer class="bg-desert-sand dark:bg-charcoal full-width rounded-t-xl mt-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 space-y-4">
+<div class="font-headline-md text-headline-md font-bold text-safari-green">Milana Tours</div>
+<p class="text-on-surface-variant">Curating elite African experiences since 2010. Authentic luxury in the heart of the wild.</p>
+</div>
+<div>
+<h4 class="font-bold text-safari-green mb-4">Quick Links</h4>
+<ul class="space-y-2 text-on-surface-variant">
+<li class="hover:text-savanna-gold transition-colors cursor-pointer">About Us</li>
+<li class="hover:text-savanna-gold transition-colors cursor-pointer">Safari Blog</li>
+<li class="hover:text-savanna-gold transition-colors cursor-pointer">Sustainability</li>
+<li class="hover:text-savanna-gold transition-colors cursor-pointer">Terms of Service</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-safari-green mb-4">Popular Destinations</h4>
+<ul class="space-y-2 text-on-surface-variant">
+<li class="hover:text-savanna-gold transition-colors cursor-pointer">Maasai Mara</li>
+<li class="hover:text-savanna-gold transition-colors cursor-pointer">Serengeti</li>
+<li class="hover:text-savanna-gold transition-colors cursor-pointer">Zanzibar Beaches</li>
+<li class="hover:text-savanna-gold transition-colors cursor-pointer">Victoria Falls</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-safari-green">Newsletter</h4>
+<div class="flex gap-2">
+<input class="bg-white border-none rounded-lg p-2 flex-grow" placeholder="Email" type="email"/>
+<button class="bg-safari-green text-white px-4 py-2 rounded-lg">Join</button>
+</div>
+<p class="text-xs opacity-70">© 2024 Milana Tours. All rights reserved. Refined African Adventures.</p>
+</div>
+</div>
+</footer>
+<script>
+        let currentCurrency = 'USD';
+        let conversionRate = 1;
+        let basePrice = 3200;
+        let selectedExtras = {};
+
+        function updateCurrency(code, rate) {
+            currentCurrency = code;
+            conversionRate = rate;
+            document.getElementById('current-currency').innerText = code;
+            
+            // Update all price tags on the page
+            document.querySelectorAll('[data-base-price]').forEach(el => {
+                const price = parseFloat(el.getAttribute('data-base-price'));
+                el.innerText = formatPrice(price);
+            });
+            
+            updateTotal();
+        }
+
+        function formatPrice(val) {
+            const converted = (val * conversionRate).toLocaleString(undefined, {
+                maximumFractionDigits: 0
+            });
+            const symbols = { 'USD': '$', 'KES': 'KSh ', 'UGX': 'USh ', 'TZS': 'TSh ' };
+            return `${symbols[currentCurrency] || ''}${converted}`;
+        }
+
+        function toggleExtra(id, price, checkbox) {
+            if(checkbox.checked) {
+                selectedExtras[id] = { name: checkbox.closest('label').querySelector('p').innerText, price: price };
+            } else {
+                delete selectedExtras[id];
+            }
+            updateTotal();
+        }
+
+        function updateTotal() {
+            let total = basePrice;
+            const extrasList = document.getElementById('extras-list');
+            extrasList.innerHTML = '';
+            
+            const extraKeys = Object.keys(selectedExtras);
+            if(extraKeys.length > 0) {
+                extrasList.classList.remove('hidden');
+                extraKeys.forEach(k => {
+                    const item = selectedExtras[k];
+                    total += item.price;
+                    const div = document.createElement('div');
+                    div.className = 'flex justify-between items-center';
+                    div.innerHTML = `<span>${item.name}</span><span>${formatPrice(item.price)}</span>`;
+                    extrasList.appendChild(div);
+                });
+            } else {
+                extrasList.classList.add('hidden');
+            }
+
+            document.getElementById('base-price-display').innerText = formatPrice(basePrice);
+            document.getElementById('total-price-display').innerText = formatPrice(total);
+        }
+
+        function goToStep(step) {
+            // Hide all steps
+            for(let i=1; i<=4; i++) {
+                document.getElementById(`step-${i}`).classList.add('hidden');
+                document.getElementById(`step-node-${i}`).classList.replace('bg-safari-green', 'bg-white');
+                document.getElementById(`step-node-${i}`).classList.replace('text-white', 'text-on-surface-variant');
+                document.getElementById(`step-node-${i}`).classList.add('border-2', 'border-surface-variant');
+            }
+
+            // Show active step
+            document.getElementById(`step-${step}`).classList.remove('hidden');
+            
+            // Update nodes up to current step
+            for(let i=1; i<=step; i++) {
+                document.getElementById(`step-node-${i}`).classList.replace('bg-white', 'bg-safari-green');
+                document.getElementById(`step-node-${i}`).classList.replace('text-on-surface-variant', 'text-white');
+                document.getElementById(`step-node-${i}`).classList.remove('border-2', 'border-surface-variant');
+            }
+
+            // Update progress line
+            const line = document.getElementById('progress-line');
+            const widths = ['0%', '25%', '50%', '75%', '100%'];
+            line.style.width = widths[step];
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Initialize Total
+        updateTotal();
+    </script>
+</body></html>
